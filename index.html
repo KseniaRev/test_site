@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<HTML>
+<!-Моя домашня тваринка>
+<HEAD>
+    <meta charset="windows-1251">
+    <TITLE>Моя домашня тваринка</TITLE>
+    <link rel="stylesheet" href="style.css">
+</HEAD>
+<BODY style="background-color: lightblue;">
+    <h1>Моя домашня тваринка</h1>
+    <p align="center"> <IMG SRC="1.jpg" alt="Хомка"> </p>
+    <p> <b>Я - Хомка</b> <p>
+    <p> Мені вже рік. </p>
+    <p> Спочатку я була дуже маленькою, але за пару місяців доволі швидко збільшиласа у розмірах. </p>
+    <p> <b> Трішки про мене: <b> </p>
+    <p> <ul> <li> <a HREF="#My foto"> Мої фото </a> </li> </p>
+    <p> <li> <a HREF="Life.html"> Моє життя </a> </li> </p>
+    <p> <li> <a HREF="Food.html"> Моя їжа </a> </li> </p>
+    <p> <li> <a HREF="Children.html"> Мої дітки </a> </li> </ul> </p>
+    <SCRIPT type="text/javascript">
+    window.setInterval (new_frame,2500);
+    var inc = 1;
+    var StartFrame = 1;
+    var maxFrame = 12;
+    function new_frame(){animate.src = "Gif/" + StartFrame + ".jpg";
+                            StartFrame+=inc ;
+                            if (StartFrame>maxFrame) {StartFrame=maxFrame ;
+                                                          inc=-1;}
+                            else if (StartFrame==0){StartFrame=1;
+                                                      inc=1;}}
+    </SCRIPT>
+    <p align ="center"> <img id="animate" src ="Gif/1.jpg" width="550" height="400" style="border: 3px solid white;"> </p>
+    <a NAME="My foto"> </a>
+    <IMG SRC="2.jpg" hspace=35,0%>
+    <IMG SRC="3.jpg" hspace=35,0%>
+    <IMG SRC="4.jpg" hspace=35,0%>
+    <fieldset>
+    <legend><h2>Враження</h2></legend>
+    <label for="T1">Ваше враження від перегляду сторінок: </label>
+    <input type="text" name="text1" size="20" maxlength="50" value="чудові, середні" id="T1">
+    <input type="submit" name="S1" value="Відправити">
+    </fieldset>
+    <p Align=right> <i> Заходьте ще. Завжди вам раді! </i> </p>
+    <p Align=right> <i> Ревіна Ксенія </i> </p>
+</BODY>
+</HTML>
